@@ -3,23 +3,32 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A607711325E9A244008A2B9E /* DataSources.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607711225E9A244008A2B9E /* DataSources.swift */; };
+		A607711625E9B06F008A2B9E /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = A607711525E9B06F008A2B9E /* Model.swift */; };
+		A62A4AB225EC076400221968 /* GlobalState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62A4AB125EC076400221968 /* GlobalState.swift */; };
 		A65BFA7A25E91C75005B5DCA /* AudioBookSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65BFA7925E91C75005B5DCA /* AudioBookSampleApp.swift */; };
 		A65BFA7C25E91C75005B5DCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A65BFA7B25E91C75005B5DCA /* ContentView.swift */; };
 		A65BFA7E25E91C76005B5DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65BFA7D25E91C76005B5DCA /* Assets.xcassets */; };
 		A65BFA8125E91C76005B5DCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A65BFA8025E91C76005B5DCA /* Preview Assets.xcassets */; };
+		A6B1EE2425EA7E2E00D5F0AB /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = A6B1EE2325EA7E2E00D5F0AB /* SwiftUIX */; };
+		A6E7435D25EA74FF009BCD5A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6E7435C25EA74FF009BCD5A /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A607711225E9A244008A2B9E /* DataSources.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSources.swift; sourceTree = "<group>"; };
+		A607711525E9B06F008A2B9E /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		A62A4AB125EC076400221968 /* GlobalState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalState.swift; sourceTree = "<group>"; };
 		A65BFA7625E91C75005B5DCA /* AudioBookSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioBookSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65BFA7925E91C75005B5DCA /* AudioBookSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioBookSampleApp.swift; sourceTree = "<group>"; };
 		A65BFA7B25E91C75005B5DCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A65BFA7D25E91C76005B5DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A65BFA8025E91C76005B5DCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A65BFA8225E91C76005B5DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A6E7435C25EA74FF009BCD5A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6B1EE2425EA7E2E00D5F0AB /* SwiftUIX in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,6 +67,10 @@
 				A65BFA7D25E91C76005B5DCA /* Assets.xcassets */,
 				A65BFA8225E91C76005B5DCA /* Info.plist */,
 				A65BFA7F25E91C76005B5DCA /* Preview Content */,
+				A607711225E9A244008A2B9E /* DataSources.swift */,
+				A607711525E9B06F008A2B9E /* Model.swift */,
+				A6E7435C25EA74FF009BCD5A /* DetailView.swift */,
+				A62A4AB125EC076400221968 /* GlobalState.swift */,
 			);
 			path = AudioBookSample;
 			sourceTree = "<group>";
@@ -85,6 +99,9 @@
 			dependencies = (
 			);
 			name = AudioBookSample;
+			packageProductDependencies = (
+				A6B1EE2325EA7E2E00D5F0AB /* SwiftUIX */,
+			);
 			productName = AudioBookSample;
 			productReference = A65BFA7625E91C75005B5DCA /* AudioBookSample.app */;
 			productType = "com.apple.product-type.application";
@@ -112,6 +129,9 @@
 				Base,
 			);
 			mainGroup = A65BFA6D25E91C75005B5DCA;
+			packageReferences = (
+				A6B1EE2225EA7E2E00D5F0AB /* XCRemoteSwiftPackageReference "SwiftUIX" */,
+			);
 			productRefGroup = A65BFA7725E91C75005B5DCA /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,7 +159,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65BFA7C25E91C75005B5DCA /* ContentView.swift in Sources */,
+				A607711325E9A244008A2B9E /* DataSources.swift in Sources */,
+				A62A4AB225EC076400221968 /* GlobalState.swift in Sources */,
 				A65BFA7A25E91C75005B5DCA /* AudioBookSampleApp.swift in Sources */,
+				A6E7435D25EA74FF009BCD5A /* DetailView.swift in Sources */,
+				A607711625E9B06F008A2B9E /* Model.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +293,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AudioBookSample/Preview Content\"";
+				DEVELOPMENT_TEAM = 5ZSUA7833L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AudioBookSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -290,6 +315,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"AudioBookSample/Preview Content\"";
+				DEVELOPMENT_TEAM = 5ZSUA7833L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = AudioBookSample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -314,7 +340,7 @@
 				A65BFA8425E91C76005B5DCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		A65BFA8525E91C76005B5DCA /* Build configuration list for PBXNativeTarget "AudioBookSample" */ = {
 			isa = XCConfigurationList;
@@ -323,9 +349,28 @@
 				A65BFA8725E91C76005B5DCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A6B1EE2225EA7E2E00D5F0AB /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftUIX/SwiftUIX.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A6B1EE2325EA7E2E00D5F0AB /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A6B1EE2225EA7E2E00D5F0AB /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A65BFA6E25E91C75005B5DCA /* Project object */;
 }
